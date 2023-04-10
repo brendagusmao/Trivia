@@ -17,11 +17,5 @@ export default function App() {
       <Route exact path="/feedback" component={ Feedback } />
       <Route exact path="/ranking" component={ Ranking } />
     </Switch>
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={ logo } className="App-logo" alt="logo" />
-    //     <p>SUA VEZ - TESTE DA BRANCH</p>
-    //   </header>
-    // </div>
   );
 }
