@@ -1,3 +1,5 @@
+/* eslint-disable sonarjs/cognitive-complexity */
+/* eslint-disable max-lines */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { motion } from 'framer-motion';
@@ -50,7 +52,6 @@ class Questions extends Component {
         timer: timer - 1,
       });
     }, TIMER);
-    return;
   };
 
   fetchQuestions = async () => {
@@ -254,6 +255,7 @@ const mapStateToProps = ({ player: { assertions, score, settings } }) => ({
   assertions,
   score,
 });
+
 Questions.propTypes = {
   settings: PropTypes.shape({
     difficulty: PropTypes.string,
